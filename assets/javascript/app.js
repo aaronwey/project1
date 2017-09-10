@@ -1,15 +1,9 @@
-
 var ratios = [];
 var cities = ["Denver"];
 
 function sort() {
    ratios.sort(function(a, b){return b - a});
 };
-
-
-
-
-
 
 $("#search-btn").on("click", function(event) {
    event.preventDefault();
@@ -53,7 +47,7 @@ var searchQuery= $("#user-input").val().trim();
             return $(this).text().replace(undefined, "N/A")
          });
 
-
+         
          console.log(info);
          console.log(venue.total);
       });
