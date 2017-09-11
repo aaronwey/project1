@@ -18,58 +18,77 @@
 </head>
 <body>
 
-<!-- jumbotron -->
-<div class="img">
-<div class="jumbotron">
-  <h1 class="text-center">The Barista</h1>
-  <h3 class="text-center">Become and great barista and get paid top dollar.</h3>
-</div>
-<!-- End of jumbotron -->
-
-<div class="container">
-<div class="row">
-<!-- nav section -->
-  <div class="col-xs-8">
-    <div class="navbar-collapse col-md-8 col-sm-5">
-      <ul class="nav navbar-nav">
-        <li><a href="whatsABarista.html">What's a barista?</a>
-        </li>
-        <li><a href="becomeABarista.html">Become a Barista</a>
-        </li>
-      </ul>
+  <!-- jumbotron -->
+  <div class="img">
+    <div class="jumbotron">
+      <h1 class="text-center">The Barista</h1>
+      <h3 class="text-center">Become a great barista and get paid top dollar.</h3>
     </div>
-  </div>
-  <!-- End of nav section -->
+    <!-- End of jumbotron -->
 
-
-  <div class="panel panel-primary col-md-4 col-offset-1 col-sm-5">
-    <div class="panel-heading">
-      <h3 class="panel-title"><strong>Search your top paid coffee shop</strong></h3>
-    </div>
-    <div class="panel-body">
-      <!-- Entry Form -->
-      <form>
-        <div class="form-group">
-          <input class="form-control" id="user-input" type="text" value="Enter a city">
+    <div class="container">
+      <div class="row">
+        <!-- nav section -->
+        <div class="col-xs-8">
+          <div class="navbar-collapse col-md-8 col-sm-5">
+            <ul class="nav navbar-nav">
+              <li><a href="whatsABarista.html">What's a barista?</a>
+              </li>
+              <li><a href="becomeABarista.html">Become a Barista</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button class="btn btn-primary" id="search-btn" type="submit">Submit
-        </button>
-      </form>
-    </div>
+        <!-- End of nav section -->
+
+
+        <div class="panel panel-primary col-md-4 col-offset-1 col-sm-5">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Search your top paid coffee shop</strong></h3>
+          </div>
+          <div class="panel-body">
+
+            <!-- Entry Form -->
+            <form>
+              <div class="form-group">
+                <input class="form-control" id="user-input" type="text" placeholder="Enter a city">
+              </div>
+              <button class="btn btn-primary" id="search-btn" type="submit">Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+
+        <!-- Rendered Buttons will go here -->
+        <div id="search-history"></div>
+
+        <!-- Rendered coffee shop info goes here -->
+        <div class="panel panel-primary col-md-4 col-offset-1 col-sm-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="navbar-collapse col-md-8 col-sm-5">
+                  <div id="info"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>  <!-- end of row   -->
+    </div>  <!-- end of container   -->
+  </div>  <!-- end of background img   -->
+
+
+  <!-- footer -->
+  <div>
+    <footer>©Copyright 2017 Decoders </footer>
   </div>
+  <!-- End footer -->
 
-</div>
-</div>
-</div>
-
-
-<!-- footer -->
-<div>
-  <footer>©Copyright 2017 Decoders </footer>
-</div>
-<!-- End footer -->
-
-<!-- Local JavaScript -->
-<script src="assets/javascript/app.js"></script>
+  <!-- Local JavaScript -->
+  <script src="assets/javascript/app.js"></script>
 </body>
 </html>

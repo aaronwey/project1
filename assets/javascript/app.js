@@ -39,16 +39,17 @@ var searchQuery= $("#user-input").val().trim();
     for (var i = 0; i < info.length; i++) {
       var venue = info[i];
 
-      $('#info').append('<div>' + venue.name + "<br>" + venue.total + '</div> <br>');
+
+      $('#info').append('<div>' + venue.name + "<br>" + venue.location.address + "<br>" + "Tip Ratio: " + venue.total + "<br>" + "<a href=" + venue.url + "venue.url" + ">" + venue.url + "</a> </div> <br>");
    };
-
-
-         $("info").text(function() {
-            return $(this).text().replace(undefined, "N/A")
-         });
-
-         
+       
          console.log(info);
          console.log(venue.total);
       });
+
+
+      // to change the undefined text to blank ----> Not working yet
+            //          $("#info").text(function() {
+            // return $(this).text().replace(undefined, "")
+         // });  
 });
