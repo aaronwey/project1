@@ -3,12 +3,8 @@
 
 body {
   background: url("../images/barista1.jpg");
-  background-repeat: no-repeat;
   background-color: #723d0b;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;  
-  background-position: 50%;
+  background-size: 100%;
 }
 
 .jumbotron {
@@ -57,11 +53,29 @@ body {
   border-color: #723d0b;
   background-color: #723d0b;
   opacity: 0.8;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 
 .btn-primary {
   background-color: #723d0b;
   border-color: #723d0b;
+}
+
+.btn-primary {
+  border: 1px solid #000000;
+}
+
+.new-info {
+  background-color: #723d0b;
+  opacity: 0.9;
+  border-radius: 15px;
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 25px;
+  border: 2px solid #222222;
+  box-shadow: 12px 12px 8px #000000;
 }
 
 footer {
@@ -94,7 +108,4 @@ footer {
    .container {
     width: 768px;
    }
-   .panel-primary {
-    margin-left: 10px;
-    }
 }
