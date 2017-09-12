@@ -40,8 +40,23 @@ var searchQuery= $("#user-input").val().trim();
       var venue = info[i];
 
 
-      $('#info').append('<div>' + venue.name + "<br>" + venue.location.address + "<br>" + "Tip Ratio: " + venue.total + "<br>" + "<a href=" + venue.url + "venue.url" + ">" + venue.url + "</a> </div> <br>");
+      $('#info').append('<div class="new-info">' 
+        + "Name: " + venue.name 
+        + "<br>" 
+        + "Phone #: " + venue.contact.formattedPhone
+        + "<br>" 
+        + "Address: " + venue.location.formattedAddress 
+        + "<br>"
+        + "Tip Ratio: " + venue.total 
+        + "<br>" 
+        + "Web-site: " + "<a href=" + venue.url + "venue.url>" + venue.url + "</a>"
+        + "</div>");
    };
+
+    //we can maybe use an if statment to not display the undefined results
+        // if(venue.url == undefined) {
+            //hide venue.url
+        // };
        
          console.log(info);
          console.log(venue.total);
