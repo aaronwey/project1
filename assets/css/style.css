@@ -109,3 +109,7 @@ footer {
     width: 768px;
    }
 }
+
+.url-Remove {
+  display: none !important;
+}
