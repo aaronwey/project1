@@ -78,6 +78,10 @@ body {
   box-shadow: 12px 12px 8px #000000;
 }
 
+.url-Remove {
+  display: none !important;
+}
+
 footer {
     background-color: #723d0b;
     position: fixed;
@@ -108,8 +112,4 @@ footer {
    .container {
     width: 768px;
    }
-}
-
-.url-Remove {
-  display: none !important;
 }
