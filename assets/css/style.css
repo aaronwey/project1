@@ -82,6 +82,13 @@ body {
   display: none !important;
 }
 
+#map {
+  height: 400px;
+  width: 1000px;
+  border: 5px solid #222222;
+  box-shadow: 12px 12px 8px #000000;
+}
+
 footer {
     background-color: #723d0b;
     position: fixed;
