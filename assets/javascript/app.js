@@ -79,6 +79,16 @@
         venue.contact.formattedPhone = 'Unavailable';
       }
 
+      // if (total.isNaN) { 
+
+      //     total.html("N/A");
+      // }
+
+       if (Number.isNaN(Number(venue.total))) {
+      
+        venue.total="Not Available";
+      }
+
       console.log("******");
       console.log(venue.url);
       console.log("Web-site: " + "<a class='url-Remove' href=" + venue.url + "</a>");
