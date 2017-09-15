@@ -19,11 +19,13 @@
    };
 
      $('#info').on('click', '.new-info', function() {
-      
+
+      // changes the div to light brown when clicked      
     $(this).css("background", "#DEB887");
     var index = $(this).index();
 
     database.ref().push(savedCafe[index]);
+    // empties div so there are no repeats
       $(".innerDiv").empty();
       function InitialUpload(){database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
@@ -49,6 +51,8 @@ console.log(cafeName);
 
 InitialUpload();
   });
+
+//this button removes both firebase data and clears the div
 
     $(".removeData").on("click", function(){
       database.ref().remove();
