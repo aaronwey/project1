@@ -44,6 +44,10 @@ body {
   color: #000000;
 }
 
+.card-body {
+  background-color: yellow;
+  float: right;
+}
 .panel-primary .panel-heading {
   background-color: #723d0b;
   border-color: #723d0b;
@@ -120,3 +124,6 @@ footer {
     width: 768px;
    }
 }
+
+
+
