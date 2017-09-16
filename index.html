@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row">
         <!-- nav section -->
-        <div class="navbar-collapse  col-lg-4 col-md-4 col-sm-12">
+        <div class="navbar-collapse col-md-5 col-sm-offset-1 col-sm-10">
           <ul class="nav navbar-nav">
             <li><a href="whatsABarista.html">What's a barista?</a>
             </li>
@@ -37,11 +37,9 @@
             </li>
           </ul>
         </div>
-
-        <!-- <div id="savedList"></div> -->
         <!-- End of nav section -->
-
-        <div class="panel panel-primary offset-md-1 col-lg-4 col-md-4 col-sm-8">
+        
+        <div class="panel panel-primary col-md-4 col-sm-9">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Search your top paid coffee shop</strong></h3>
           </div>
@@ -57,35 +55,35 @@
           </div>
         </div>
 
-        <!-- this is the div where firebase data is uploaded -->
-        <div class="card-body col-lg-4 col-md-4 sticky-top">
-    <h4 class="card-title">Saved List</h4>
-    <p class="card-text savedList"></p>
-    <button type="button" class="btn btn-danger removeData">Clear</button>
-  </div>
       </div> 
-        <div class="card" style="width: 20rem;">
-</div>
-       <!-- end of row   -->
 
+      <div class="row">
+        <div class="card-body col-md-offset-1 col-md-8 col-sm-offset-1 col-sm-8 sticky-top">
+          <h4 class="card-title">Saved List</h4>
+          <p class="card-text savedList"></p>
+          <button type="button" class="btn btn-danger removeData">Clear</button>
+        </div>
+      </div>
+        <!-- this is the div where firebase data is uploaded -->
 
+      <div class="card">
+      </div>
+      <!-- end of row   -->
 
       <!-- this is where the map will show -->
-        <div id="map"></div>
+      <div id="map" class="hidden"></div>
 
-        <br><br>
+      <br><br>
 
-        <!-- Rendered Buttons will go here -->
-        <!-- <div id="search-history" class="new-info"></div> -->
-
-        <div class="container">
-           <div class="col-md-8 col-sm-5">
-            <div id="info">
-            </div>
-           </div>
+      <!-- Rendered Buttons will go here -->
+    <div class="container">
+      <div class="col-md-10 col-sm-10">
+        <div id="info">
         </div>
+      </div>
+    </div>
 
-      </div> <!--end of container-->
+  </div> <!--end of container-->
 
   <!-- footer -->
   <br><br><br><br>
@@ -95,11 +93,11 @@
   </div>
   <!-- End footer -->
 
-<!--google API link-->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeN_TFadUAu1YbATQVRBfDeWAyM5mBuRQ">
-  </script>
-  <!-- Local JavaScript -->
-  <script src="assets/javascript/app2.js"></script>
+  <!--google API link-->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeN_TFadUAu1YbATQVRBfDeWAyM5mBuRQ">
+</script>
+<!-- Local JavaScript -->
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
