@@ -28,7 +28,6 @@ body {
   background-color: #723d0b;
   opacity: 0.8;
   border-radius: 50px;
-  border-radius: 8px;
 }
 
 .navbar-nav li a {
@@ -38,16 +37,12 @@ body {
   font-size: 30px;
 }
 
-.navbar-nav :hover {
-  background-color: #472504;
+.navbar-nav li :hover {
+  background-color: black;
   border-radius: 50px;
   color: #000000;
 }
 
-.card-body {
-  background-color: yellow;
-  float: right;
-}
 .panel-primary .panel-heading {
   background-color: #723d0b;
   border-color: #723d0b;
@@ -70,6 +65,30 @@ body {
   border: 1px solid #000000;
 }
 
+#map {
+  height: 400px;
+  width: 1000px;
+  border: 5px solid #222222;
+  box-shadow: 12px 12px 8px #000000;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-body {
+  float: left;
+  background-color: #723d0b;
+  opacity: 0.9;
+  border-radius: 15px;
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 25px;
+  border: 2px solid #222222;
+  box-shadow: 12px 12px 8px #000000;
+}
+
 .new-info {
   background-color: #723d0b;
   opacity: 0.9;
@@ -84,13 +103,6 @@ body {
 
 .url-Remove {
   display: none !important;
-}
-
-#map {
-  height: 400px;
-  width: 1000px;
-  border: 5px solid #222222;
-  box-shadow: 12px 12px 8px #000000;
 }
 
 footer {
@@ -124,6 +136,4 @@ footer {
     width: 768px;
    }
 }
-
-
 
